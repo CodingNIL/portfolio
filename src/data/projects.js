@@ -4,7 +4,7 @@ export const projects = [
     description:
       "Built a web platform using React and Firebase with authentication and responsive UI, focused on improving user interaction and usability.",
     tech: ["React", "Tailwind", "Firebase"],
-    github: "#",
+    github: "https://github.com/CodingNIL/resourcify",
     live: "#",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     description:
       "Designed and developed a modern portfolio using React and Tailwind, focusing on clean UI and responsive design.",
     tech: ["React", "Tailwind"],
-    github: "#",
+    github: "https://github.com/CodingNIL/portfolio",
     live: "#",
   },
 ];
