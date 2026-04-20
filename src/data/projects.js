@@ -13,6 +13,6 @@ export const projects = [
       "Designed and developed a modern portfolio using React and Tailwind, focusing on clean UI and responsive design.",
     tech: ["React", "Tailwind"],
     github: "https://github.com/CodingNIL/portfolio",
-    live: "https://niladri-portfolio-dev.vercel.app/",
+    live: "https://niladri-portfolio-dev.vercel.app",
   },
 ];
