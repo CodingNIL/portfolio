@@ -7,24 +7,42 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 🔥 Fix white overscroll issue */
-html, body {
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* FIX OVERFLOW */
+html,
+body {
   background-color: black;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
-/* Optional: prevent bounce effect */
-body {
-  overscroll-behavior: none;
+/* ROOT FIX */
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
-/* Better font rendering */
+/* KEEP TOUCHPAD/MOMENTUM SCROLLING WORKING */
 body {
   font-family: system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
+/* MEDIA FIX */
+img,
+video,
+canvas {
+  max-width: 100%;
+  display: block;
+}
+
+/* TEXT SELECTION */
 ::selection {
   background: #3b82f6;
   color: white;

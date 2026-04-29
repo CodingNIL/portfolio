@@ -2,16 +2,17 @@ export const projects = [
   {
     title: "Resourcify",
     description:
-      "Built a web platform using React and Firebase with authentication and responsive UI, focused on improving user interaction and usability.",
-    tech: ["React", "Tailwind", "Firebase"],
+      "Built a resource-sharing platform with authentication, responsive UI, and modern frontend architecture focused on usability and performance.",
+    tech: ["React", "TailwindCSS", "Firebase"],
     github: "https://github.com/CodingNIL/resourcify",
     live: "#",
   },
+
   {
     title: "Portfolio Website",
     description:
-      "Designed and developed a modern portfolio using React and Tailwind, focusing on clean UI and responsive design.",
-    tech: ["React", "Tailwind"],
+      "Designed and developed a premium developer portfolio with smooth animations, modern UI interactions, and responsive layouts.",
+    tech: ["React", "TailwindCSS", "Framer Motion"],
     github: "https://github.com/CodingNIL/portfolio",
     live: "https://niladri-portfolio-dev.vercel.app",
   },

@@ -2,51 +2,85 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 px-6 bg-black text-white text-center">
-      
+    <section
+      id="contact"
+      className="relative overflow-hidden px-6 pb-24 pt-12 text-white"
+    >
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 35 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="max-w-2xl mx-auto"
+        className="
+          group relative mx-auto
+          max-w-5xl overflow-hidden
+          rounded-[36px]
+          border border-white/10
+          bg-white/[0.03]
+          p-12 text-center
+          backdrop-blur-xl
+        "
       >
-        
-        <h2 className="text-3xl md:text-4xl font-semibold">
-          Let’s Build Something Together
-        </h2>
-
-        <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-          I’m currently open to Software Development Internships and collaborations.
-          If you're working on something interesting or hiring, feel free to reach out.
-        </p>
-
-        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        {/* PREMIUM GLOW */}
+        <div className="absolute inset-0 opacity-0 transition duration-700 group-hover:opacity-100">
           
-          <a
-            href="mailto:nsarkar2006@gmail.com"
-            className="bg-blue-500 px-6 py-3 rounded-xl font-medium
-            hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)]
-            transition duration-300"
-          >
-            Email Me
-          </a>
+          <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
 
-          <a
-            href="https://www.linkedin.com/in/niladri-sarkar-dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-gray-700 px-6 py-3 rounded-xl font-medium
-            hover:border-white hover:bg-white hover:text-black
-            transition duration-300"
-          >
-            LinkedIn
-          </a>
-
+          <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl"></div>
         </div>
 
-      </motion.div>
+        {/* CONTENT */}
+        <div className="relative z-10">
+          
+          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-blue-400">
+            Let’s Connect
+          </p>
 
+          <h2 className="text-4xl font-bold leading-tight md:text-5xl">
+            Let’s Build Something Amazing Together
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-400">
+            I’m currently open to Software Development Internships,
+            collaborations, and exciting opportunities focused on
+            building impactful digital experiences.
+          </p>
+
+          {/* BUTTONS */}
+          <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+            
+            <a
+              href="mailto:nsarkar2006@gmail.com"
+              className="
+                rounded-2xl bg-blue-500
+                px-8 py-4 font-medium text-white
+                transition-all duration-300
+                hover:bg-blue-400
+                hover:shadow-[0_0_35px_rgba(59,130,246,0.45)]
+              "
+            >
+              Email Me
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/niladri-sarkar-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                rounded-2xl border border-white/10
+                bg-white/[0.03]
+                px-8 py-4 font-medium text-white
+                backdrop-blur-md
+                transition-all duration-300
+                hover:bg-white
+                hover:text-black
+              "
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };
